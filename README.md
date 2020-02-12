@@ -1,24 +1,27 @@
-# README
+# Devise_confirmable
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a test for confirmable feature from devise
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+Just run the bin setup:
 
-* System dependencies
+```bash
+  bin/setup
+```
 
-* Configuration
+To run the app:
 
-* Database creation
+```bash
+  rails server
+```
+## check emails:💎
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* check emails:
+```bash
+   How
+gem install mailcatcher
+mailcatcher
+Go to http://localhost:1080/
+Send mail through smtp://localhost:1025
+```
