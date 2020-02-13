@@ -21,6 +21,7 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'bootstrap', '~> 4.4', '>= 4.4.1'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
+gem 'omniauth-google-oauth2', '~> 0.4.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -44,6 +45,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'dotenv', '~> 2.2.1'
 end
 
 group :test do

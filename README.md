@@ -13,6 +13,8 @@ Just run the bin setup:
 To run the app:
 
 ```bash
+  dotenv rails server
+  or
   rails server
 ```
 ## check emails:💎
