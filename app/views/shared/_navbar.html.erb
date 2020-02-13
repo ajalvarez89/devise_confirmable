@@ -1,0 +1,18 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/">Our Logo</a>
+  <% if user_signed_in? %>
+    <form class="form-inline">
+      <%= link_to "Logout", destroy_user_session_path, :method => :delete, :class => 'btn btn-outline-primary'%>
+      <div style="padding-left: 10px;">
+        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-outline-success' %>
+      </div>
+    </form>
+  <% else %>
+   <form class="form-inline">
+      <%= link_to "Sign up", new_user_registration_path, :class => 'btn btn-outline-primary'  %>
+      <div style="padding-left: 10px;">
+        <%= link_to "Login", new_user_session_path, :class => 'btn btn-outline-success'  %>
+      </div>
+    </form>
+  <% end %>
+</nav>
